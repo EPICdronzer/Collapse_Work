@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Collapse — $35 Billion Margin Call</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    background: #000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* poster wrapper: image scales to full width of the screen,
+     keeps its natural aspect ratio, and the page scrolls
+     normally so the whole poster is always fully visible */
+  .poster-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .poster-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  .cta-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px 48px;
+    background: #000;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 18px 48px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #b31217, #e52d27 60%, #b31217);
+    border: 2px solid #ff4d4d;
+    border-radius: 6px;
+    box-shadow: 0 0 25px rgba(229, 45, 39, 0.7), 0 8px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    animation: pulse 2.2s infinite;
+    text-align: center;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 40px rgba(255, 77, 77, 0.9), 0 10px 25px rgba(0,0,0,0.6);
+    background: linear-gradient(135deg, #e52d27, #ff4d4d 60%, #e52d27);
+  }
+
+  .cta-btn:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 25px rgba(229, 45, 39, 0.7), 0 8px 20px rgba(0,0,0,0.5); }
+    50%  { box-shadow: 0 0 40px rgba(255, 77, 77, 0.95), 0 8px 20px rgba(0,0,0,0.5); }
+    100% { box-shadow: 0 0 25px rgba(229, 45, 39, 0.7), 0 8px 20px rgba(0,0,0,0.5); }
+  }
+
+  @media (max-width: 480px) {
+    .cta-btn {
+      padding: 14px 32px;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      width: 100%;
+      max-width: 320px;
+    }
+    .cta-wrap {
+      padding: 24px 16px 40px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="poster-wrap">
+    <img src="poster.jpg" alt="The Collapse — $35 Billion Margin Call poster">
+  </div>
+  <div class="cta-wrap">
+    <a href="collapse.html" class="cta-btn">See Full Report</a>
+  </div>
+</body>
+</html>
